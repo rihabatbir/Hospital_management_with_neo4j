@@ -1,0 +1,38 @@
+/* frontend/chatbot/chatbotStyles.css */
+
+.chatbot-container {
+  font-family: sans-serif;
+}
+
+.chatbot {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chat-header {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.chatbox {
+  max-height: 16rem;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.chat-input input {
+  font-size: 0.875rem;
+  outline: none;
+}
+
+/* Scrollbar personnalisée */
+.chatbox::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbox::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}

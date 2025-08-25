@@ -1,0 +1,1799 @@
+﻿[
+  {
+    "p": {
+      "start": {
+        "identity": 9,
+        "labels": [
+          "Diagnostic"
+        ],
+        "properties": {
+          "description": "Hypertension artérielle",
+          "pathologie": "Hypertension",
+          "diagnostic_id": "D001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+      },
+      "end": {
+        "identity": 7,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "3 mois",
+          "traitement_id": "T001",
+          "nom": "Bêta-bloquants"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 9,
+            "labels": [
+              "Diagnostic"
+            ],
+            "properties": {
+              "description": "Hypertension artérielle",
+              "pathologie": "Hypertension",
+              "diagnostic_id": "D001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          },
+          "relationship": {
+            "identity": 2,
+            "start": 9,
+            "end": 7,
+            "type": "TRAITE_PAR",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:2",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          },
+          "end": {
+            "identity": 7,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "3 mois",
+              "traitement_id": "T001",
+              "nom": "Bêta-bloquants"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "end": {
+        "identity": 37,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-15",
+          "heure": "10:00"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:37"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "relationship": {
+            "identity": 36,
+            "start": 35,
+            "end": 37,
+            "type": "A_EU_RENDEZVOUS",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:36",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:37"
+          },
+          "end": {
+            "identity": 37,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-15",
+              "heure": "10:00"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:37"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 37,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-15",
+          "heure": "10:00"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:37"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M001",
+          "specialite": "dermatologue",
+          "prenom": "aya",
+          "nom": "Elhlafi",
+          "email": "rihab@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 37,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-15",
+              "heure": "10:00"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:37"
+          },
+          "relationship": {
+            "identity": 37,
+            "start": 37,
+            "end": 33,
+            "type": "AVEC_MEDECIN",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:37",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:37",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M001",
+              "specialite": "dermatologue",
+              "prenom": "aya",
+              "nom": "Elhlafi",
+              "email": "rihab@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "end": {
+        "identity": 9,
+        "labels": [
+          "Diagnostic"
+        ],
+        "properties": {
+          "description": "Hypertension artérielle",
+          "pathologie": "Hypertension",
+          "diagnostic_id": "D001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "relationship": {
+            "identity": 38,
+            "start": 35,
+            "end": 9,
+            "type": "A_RECU_DIAGNOSTIC",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:38",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          },
+          "end": {
+            "identity": 9,
+            "labels": [
+              "Diagnostic"
+            ],
+            "properties": {
+              "description": "Hypertension artérielle",
+              "pathologie": "Hypertension",
+              "diagnostic_id": "D001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 9,
+        "labels": [
+          "Diagnostic"
+        ],
+        "properties": {
+          "description": "Hypertension artérielle",
+          "pathologie": "Hypertension",
+          "diagnostic_id": "D001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+      },
+      "end": {
+        "identity": 7,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "3 mois",
+          "traitement_id": "T001",
+          "nom": "Bêta-bloquants"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 9,
+            "labels": [
+              "Diagnostic"
+            ],
+            "properties": {
+              "description": "Hypertension artérielle",
+              "pathologie": "Hypertension",
+              "diagnostic_id": "D001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          },
+          "relationship": {
+            "identity": 39,
+            "start": 9,
+            "end": 7,
+            "type": "PRESCRIT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:39",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          },
+          "end": {
+            "identity": 7,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "3 mois",
+              "traitement_id": "T001",
+              "nom": "Bêta-bloquants"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 33,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M001",
+          "specialite": "dermatologue",
+          "prenom": "aya",
+          "nom": "Elhlafi",
+          "email": "rihab@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+      },
+      "end": {
+        "identity": 9,
+        "labels": [
+          "Diagnostic"
+        ],
+        "properties": {
+          "description": "Hypertension artérielle",
+          "pathologie": "Hypertension",
+          "diagnostic_id": "D001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 33,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M001",
+              "specialite": "dermatologue",
+              "prenom": "aya",
+              "nom": "Elhlafi",
+              "email": "rihab@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          },
+          "relationship": {
+            "identity": 42,
+            "start": 33,
+            "end": 9,
+            "type": "POSE",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:42",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          },
+          "end": {
+            "identity": 9,
+            "labels": [
+              "Diagnostic"
+            ],
+            "properties": {
+              "description": "Hypertension artérielle",
+              "pathologie": "Hypertension",
+              "diagnostic_id": "D001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 33,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M001",
+          "specialite": "dermatologue",
+          "prenom": "aya",
+          "nom": "Elhlafi",
+          "email": "rihab@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+      },
+      "end": {
+        "identity": 5,
+        "labels": [
+          "Service"
+        ],
+        "properties": {
+          "chef_service": "Dr. Benali",
+          "service_id": "SRV001",
+          "nom": "Cardiologie"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:5"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 33,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M001",
+              "specialite": "dermatologue",
+              "prenom": "aya",
+              "nom": "Elhlafi",
+              "email": "rihab@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          },
+          "relationship": {
+            "identity": 43,
+            "start": 33,
+            "end": 5,
+            "type": "TRAVAILLE_DANS",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:43",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:5"
+          },
+          "end": {
+            "identity": 5,
+            "labels": [
+              "Service"
+            ],
+            "properties": {
+              "chef_service": "Dr. Benali",
+              "service_id": "SRV001",
+              "nom": "Cardiologie"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:5"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Specialiste"
+        ],
+        "properties": {
+          "specialiste_id": "S001",
+          "domaine": "Oncologie",
+          "nom": "Lahlou"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:4"
+      },
+      "end": {
+        "identity": 6,
+        "labels": [
+          "Service"
+        ],
+        "properties": {
+          "chef_service": "Dr. Nassiri",
+          "service_id": "SRV002",
+          "nom": "Neurologie"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:6"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Specialiste"
+            ],
+            "properties": {
+              "specialiste_id": "S001",
+              "domaine": "Oncologie",
+              "nom": "Lahlou"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:4"
+          },
+          "relationship": {
+            "identity": 44,
+            "start": 4,
+            "end": 6,
+            "type": "EXERCE_DANS",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:44",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:4",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:6"
+          },
+          "end": {
+            "identity": 6,
+            "labels": [
+              "Service"
+            ],
+            "properties": {
+              "chef_service": "Dr. Nassiri",
+              "service_id": "SRV002",
+              "nom": "Neurologie"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:6"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "end": {
+        "identity": 11,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-10",
+          "heure": "10:00",
+          "rdv_id": "RDV001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:11"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "relationship": {
+            "identity": 45,
+            "start": 35,
+            "end": 11,
+            "type": "A_EU_RENDEZVOUS",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:45",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:11"
+          },
+          "end": {
+            "identity": 11,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-10",
+              "heure": "10:00",
+              "rdv_id": "RDV001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:11"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 11,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-10",
+          "heure": "10:00",
+          "rdv_id": "RDV001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:11"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M001",
+          "specialite": "dermatologue",
+          "prenom": "aya",
+          "nom": "Elhlafi",
+          "email": "rihab@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 11,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-10",
+              "heure": "10:00",
+              "rdv_id": "RDV001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:11"
+          },
+          "relationship": {
+            "identity": 46,
+            "start": 11,
+            "end": 33,
+            "type": "AVEC_MEDECIN",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:46",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:11",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M001",
+              "specialite": "dermatologue",
+              "prenom": "aya",
+              "nom": "Elhlafi",
+              "email": "rihab@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 10,
+        "labels": [
+          "Diagnostic"
+        ],
+        "properties": {
+          "pathologie": "Migraine",
+          "description": "Migraine chronique",
+          "diagnostic_id": "D002"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:10"
+      },
+      "end": {
+        "identity": 8,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "6 semaines",
+          "traitement_id": "T002",
+          "nom": "Physiothérapie"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:8"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 10,
+            "labels": [
+              "Diagnostic"
+            ],
+            "properties": {
+              "pathologie": "Migraine",
+              "description": "Migraine chronique",
+              "diagnostic_id": "D002"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:10"
+          },
+          "relationship": {
+            "identity": 47,
+            "start": 10,
+            "end": 8,
+            "type": "PRESCRIT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:47",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:10",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:8"
+          },
+          "end": {
+            "identity": 8,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "6 semaines",
+              "traitement_id": "T002",
+              "nom": "Physiothérapie"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:8"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 34,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M002",
+          "specialite": "généraliste",
+          "prenom": "Rihab",
+          "nom": "Atbir"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+      },
+      "end": {
+        "identity": 6,
+        "labels": [
+          "Service"
+        ],
+        "properties": {
+          "chef_service": "Dr. Nassiri",
+          "service_id": "SRV002",
+          "nom": "Neurologie"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:6"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 34,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M002",
+              "specialite": "généraliste",
+              "prenom": "Rihab",
+              "nom": "Atbir"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+          },
+          "relationship": {
+            "identity": 50,
+            "start": 34,
+            "end": 6,
+            "type": "TRAVAILLE_DANS",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:50",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:6"
+          },
+          "end": {
+            "identity": 6,
+            "labels": [
+              "Service"
+            ],
+            "properties": {
+              "chef_service": "Dr. Nassiri",
+              "service_id": "SRV002",
+              "nom": "Neurologie"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:6"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 12,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-12",
+          "heure": "14:30",
+          "rdv_id": "RDV002"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:12"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M002",
+          "specialite": "généraliste",
+          "prenom": "Rihab",
+          "nom": "Atbir"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 12,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-12",
+              "heure": "14:30",
+              "rdv_id": "RDV002"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:12"
+          },
+          "relationship": {
+            "identity": 51,
+            "start": 12,
+            "end": 34,
+            "type": "AVEC_MEDECIN",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:51",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:12",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M002",
+              "specialite": "généraliste",
+              "prenom": "Rihab",
+              "nom": "Atbir"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "end": {
+        "identity": 12,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-12",
+          "heure": "14:30",
+          "rdv_id": "RDV002"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:12"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "relationship": {
+            "identity": 52,
+            "start": 35,
+            "end": 12,
+            "type": "A_EU_RENDEZVOUS",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:52",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:12"
+          },
+          "end": {
+            "identity": 12,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-12",
+              "heure": "14:30",
+              "rdv_id": "RDV002"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:12"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "end": {
+        "identity": 7,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "3 mois",
+          "traitement_id": "T001",
+          "nom": "Bêta-bloquants"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "relationship": {
+            "identity": 53,
+            "start": 35,
+            "end": 7,
+            "type": "A_RECU",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:53",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          },
+          "end": {
+            "identity": 7,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "3 mois",
+              "traitement_id": "T001",
+              "nom": "Bêta-bloquants"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 7,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "3 mois",
+          "traitement_id": "T001",
+          "nom": "Bêta-bloquants"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+      },
+      "end": {
+        "identity": 9,
+        "labels": [
+          "Diagnostic"
+        ],
+        "properties": {
+          "description": "Hypertension artérielle",
+          "pathologie": "Hypertension",
+          "diagnostic_id": "D001"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 7,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "3 mois",
+              "traitement_id": "T001",
+              "nom": "Bêta-bloquants"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          },
+          "relationship": {
+            "identity": 54,
+            "start": 7,
+            "end": 9,
+            "type": "LIE_A",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:54",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          },
+          "end": {
+            "identity": 9,
+            "labels": [
+              "Diagnostic"
+            ],
+            "properties": {
+              "description": "Hypertension artérielle",
+              "pathologie": "Hypertension",
+              "diagnostic_id": "D001"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:9"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 33,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M001",
+          "specialite": "dermatologue",
+          "prenom": "aya",
+          "nom": "Elhlafi",
+          "email": "rihab@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+      },
+      "end": {
+        "identity": 7,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "3 mois",
+          "traitement_id": "T001",
+          "nom": "Bêta-bloquants"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 33,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M001",
+              "specialite": "dermatologue",
+              "prenom": "aya",
+              "nom": "Elhlafi",
+              "email": "rihab@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          },
+          "relationship": {
+            "identity": 59,
+            "start": 33,
+            "end": 7,
+            "type": "PRESCRIT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:59",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          },
+          "end": {
+            "identity": 7,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "3 mois",
+              "traitement_id": "T001",
+              "nom": "Bêta-bloquants"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:7"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 36,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P31",
+          "prenom": "EL HLAFI",
+          "nom": "NASSIRA",
+          "email": "nassira.elh@gmail.com",
+          "date_naissance": "2005-06-29"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:36"
+      },
+      "end": {
+        "identity": 39,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "1 semaine",
+          "traitement_id": "T003",
+          "nom": "nodolphene"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:39"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 36,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P31",
+              "prenom": "EL HLAFI",
+              "nom": "NASSIRA",
+              "email": "nassira.elh@gmail.com",
+              "date_naissance": "2005-06-29"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:36"
+          },
+          "relationship": {
+            "identity": 64,
+            "start": 36,
+            "end": 39,
+            "type": "A_RECU",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:64",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:36",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:39"
+          },
+          "end": {
+            "identity": 39,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "1 semaine",
+              "traitement_id": "T003",
+              "nom": "nodolphene"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:39"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 33,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M001",
+          "specialite": "dermatologue",
+          "prenom": "aya",
+          "nom": "Elhlafi",
+          "email": "rihab@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+      },
+      "end": {
+        "identity": 39,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "1 semaine",
+          "traitement_id": "T003",
+          "nom": "nodolphene"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:39"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 33,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M001",
+              "specialite": "dermatologue",
+              "prenom": "aya",
+              "nom": "Elhlafi",
+              "email": "rihab@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33"
+          },
+          "relationship": {
+            "identity": 65,
+            "start": 33,
+            "end": 39,
+            "type": "A_PRESCRIT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:65",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:33",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:39"
+          },
+          "end": {
+            "identity": 39,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "1 semaine",
+              "traitement_id": "T003",
+              "nom": "nodolphene"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:39"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "end": {
+        "identity": 40,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "1 semaine",
+          "traitement_id": "T004",
+          "nom": "Doligrippe"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:40"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "relationship": {
+            "identity": 66,
+            "start": 35,
+            "end": 40,
+            "type": "A_RECU",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:66",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:40"
+          },
+          "end": {
+            "identity": 40,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "1 semaine",
+              "traitement_id": "T004",
+              "nom": "Doligrippe"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:40"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 34,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M002",
+          "specialite": "généraliste",
+          "prenom": "Rihab",
+          "nom": "Atbir"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+      },
+      "end": {
+        "identity": 40,
+        "labels": [
+          "Traitement"
+        ],
+        "properties": {
+          "duree": "1 semaine",
+          "traitement_id": "T004",
+          "nom": "Doligrippe"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:40"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 34,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M002",
+              "specialite": "généraliste",
+              "prenom": "Rihab",
+              "nom": "Atbir"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+          },
+          "relationship": {
+            "identity": 67,
+            "start": 34,
+            "end": 40,
+            "type": "A_PRESCRIT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:67",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:40"
+          },
+          "end": {
+            "identity": 40,
+            "labels": [
+              "Traitement"
+            ],
+            "properties": {
+              "duree": "1 semaine",
+              "traitement_id": "T004",
+              "nom": "Doligrippe"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:40"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 42,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-12",
+          "heure": "13:00",
+          "patientId": "P31",
+          "id": "RDV005"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:42"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P31",
+          "prenom": "EL HLAFI",
+          "nom": "NASSIRA",
+          "email": "nassira.elh@gmail.com",
+          "date_naissance": "2005-06-29"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 42,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-12",
+              "heure": "13:00",
+              "patientId": "P31",
+              "id": "RDV005"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:42"
+          },
+          "relationship": {
+            "identity": 70,
+            "start": 42,
+            "end": 36,
+            "type": "A_POUR_PATIENT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:70",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:42",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P31",
+              "prenom": "EL HLAFI",
+              "nom": "NASSIRA",
+              "email": "nassira.elh@gmail.com",
+              "date_naissance": "2005-06-29"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 42,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-07-12",
+          "heure": "13:00",
+          "patientId": "P31",
+          "id": "RDV005"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:42"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Medecin"
+        ],
+        "properties": {
+          "medecin_id": "M002",
+          "specialite": "généraliste",
+          "prenom": "Rihab",
+          "nom": "Atbir"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 42,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-07-12",
+              "heure": "13:00",
+              "patientId": "P31",
+              "id": "RDV005"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:42"
+          },
+          "relationship": {
+            "identity": 71,
+            "start": 42,
+            "end": 34,
+            "type": "A_POUR_MEDECIN",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:71",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:42",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Medecin"
+            ],
+            "properties": {
+              "medecin_id": "M002",
+              "specialite": "généraliste",
+              "prenom": "Rihab",
+              "nom": "Atbir"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 23,
+        "labels": [
+          "User"
+        ],
+        "properties": {
+          "password": "$2b$10$FbsFEb/hzaCX3ipZW/CiqutrwqbkMpQvrIvP5xjmZ7ATYBq80Qesu",
+          "role": "patient",
+          "email": "raeat200@gmail.com"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:23"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P30",
+          "prenom": "HAMOUD",
+          "nom": "HAMZA",
+          "email": "raeat200@gmail.com",
+          "date_naissance": "1996-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 23,
+            "labels": [
+              "User"
+            ],
+            "properties": {
+              "password": "$2b$10$FbsFEb/hzaCX3ipZW/CiqutrwqbkMpQvrIvP5xjmZ7ATYBq80Qesu",
+              "role": "patient",
+              "email": "raeat200@gmail.com"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:23"
+          },
+          "relationship": {
+            "identity": 77,
+            "start": 23,
+            "end": 35,
+            "type": "REPRESENTE",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:77",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:23",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P30",
+              "prenom": "HAMOUD",
+              "nom": "HAMZA",
+              "email": "raeat200@gmail.com",
+              "date_naissance": "1996-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 46,
+        "labels": [
+          "RendezVous"
+        ],
+        "properties": {
+          "date": "2025-08-12",
+          "heure": "15:00",
+          "patientId": "P32",
+          "id": "RDV006"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:46"
+      },
+      "end": {
+        "identity": 45,
+        "labels": [
+          "Patient"
+        ],
+        "properties": {
+          "patient_id": "P32",
+          "nom": "hiba",
+          "prenom": "amir",
+          "date_naissance": "2000-10-18"
+        },
+        "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:45"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 46,
+            "labels": [
+              "RendezVous"
+            ],
+            "properties": {
+              "date": "2025-08-12",
+              "heure": "15:00",
+              "patientId": "P32",
+              "id": "RDV006"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:46"
+          },
+          "relationship": {
+            "identity": 78,
+            "start": 46,
+            "end": 45,
+            "type": "A_POUR_PATIENT",
+            "properties": {
+
+            },
+            "elementId": "5:750b59e1-2c89-420d-86a8-77d7ceb40b30:78",
+            "startNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:46",
+            "endNodeElementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:45"
+          },
+          "end": {
+            "identity": 45,
+            "labels": [
+              "Patient"
+            ],
+            "properties": {
+              "patient_id": "P32",
+              "nom": "hiba",
+              "prenom": "amir",
+              "date_naissance": "2000-10-18"
+            },
+            "elementId": "4:750b59e1-2c89-420d-86a8-77d7ceb40b30:45"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  }
+]

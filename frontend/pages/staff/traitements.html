@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Traitements</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../../js/traitements.js"></script>
+</head>
+<body class="bg-gray-50 p-6">
+  <h1 class="text-3xl font-bold mb-4">💊 Traitements Prescrits</h1>
+
+  <!-- Tableau des traitements -->
+  <table class="min-w-full bg-white rounded shadow mb-8">
+    <thead class="bg-purple-600 text-white">
+      <tr>
+        <th class="p-2 text-left">ID</th>
+        <th class="p-2 text-left">Nom</th>
+        <th class="p-2 text-left">Durée</th>
+        <th class="p-2 text-left">Patient</th> 
+      </tr>
+    </thead>
+    <tbody id="traitement-list"></tbody>
+  </table>
+
+  <!-- Formulaire d'ajout -->
+  <h2 class="text-xl font-semibold mb-2">➕ Ajouter un traitement</h2>
+  <form id="form-traitement" class="bg-white p-4 rounded shadow space-y-4 max-w-lg">
+    <div>
+      <label for="traitement-id" class="block text-sm font-medium">ID du traitement</label>
+      <input type="text" id="traitement-id" required class="w-full border px-3 py-2 rounded" />
+    </div>
+    <div>
+      <label for="traitement-nom" class="block text-sm font-medium">Nom</label>
+      <input type="text" id="traitement-nom" required class="w-full border px-3 py-2 rounded" />
+    </div>
+    <div>
+      <label for="traitement-duree" class="block text-sm font-medium">Durée</label>
+      <input type="text" id="traitement-duree" required class="w-full border px-3 py-2 rounded" />
+    </div>
+    <div>
+      <label for="patient-id" class="block text-sm font-medium">ID du patient</label>
+      <input type="text" id="patient-id" required class="w-full border px-3 py-2 rounded" />
+    </div>
+    <div>
+      <label for="medecin-id" class="block text-sm font-medium">ID du médecin</label>
+      <input type="text" id="medecin-id" required class="w-full border px-3 py-2 rounded" />
+    </div>
+    <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Ajouter</button>
+  </form>
+</body>
+</html>

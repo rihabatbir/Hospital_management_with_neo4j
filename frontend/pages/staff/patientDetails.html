@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patients</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../../js/patient.js"></script>
+</head>
+<body class="bg-gray-50 p-6">
+  <h1 class="text-3xl font-bold mb-4">🧑‍🦽 Liste des Patients</h1>
+
+  <!-- Bouton d'ajout -->
+  <button onclick="ouvrirFormulaire()" class="mb-4 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded flex items-center gap-2">
+    ➕ <span>Ajouter Patient</span>
+  </button>
+
+  <!-- Formulaire d'ajout -->
+  <div id="formulaire-ajout" class="mb-6 p-4 bg-white rounded shadow hidden">
+    <h2 class="text-xl font-semibold mb-2">Ajouter un Patient</h2>
+
+    <!-- Message -->
+    <div id="message" class="mb-4 text-sm font-medium text-red-600"></div>
+
+    <form id="form-patient" class="space-y-3">
+      <input type="text" id="patient_id" placeholder="ID du patient" class="border border-gray-300 p-2 w-full rounded" required />
+      <input type="text" id="nom" placeholder="Nom" class="border border-gray-300 p-2 w-full rounded" required />
+      <input type="text" id="prenom" placeholder="Prénom" class="border border-gray-300 p-2 w-full rounded" required />
+      <input type="date" id="date_naissance" class="border border-gray-300 p-2 w-full rounded" />
+
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+        Ajouter
+      </button>
+    </form>
+  </div>
+
+  <!-- Tableau -->
+  <table class="min-w-full bg-white rounded shadow">
+    <thead class="bg-teal-600 text-white">
+      <tr>
+        <th class="p-2 text-left">ID</th>
+        <th class="p-2 text-left">Nom</th>
+        <th class="p-2 text-left">Prénom</th>
+        <th class="p-2 text-left">Date de naissance</th>
+        <th class="p-2 text-left">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="patient-table-body" class="divide-y"></tbody>
+  </table>
+</body>
+</html>

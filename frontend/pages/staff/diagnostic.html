@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diagnostics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../js/diagnostic.js"></script>
+</head>
+<body class="bg-gray-50 p-6">
+  <h1 class="text-3xl font-bold mb-4">🧠 Diagnostics des Patients</h1>
+  <div class="bg-white p-4 rounded shadow">
+    <p class="mb-4">Cette page affiche les diagnostics et leur lien avec les traitements, patients, et médecins.</p>
+    <table class="min-w-full bg-white rounded shadow">
+      <thead class="bg-red-600 text-white">
+        <tr>
+          <th class="p-2 text-left">ID</th>
+          <th class="p-2 text-left">Diagnostic</th>
+          <th class="p-2 text-left">Patient</th>
+          <th class="p-2 text-left">Médecin</th>
+          <th class="p-2 text-left">Traitement</th>
+        </tr>
+      </thead>
+      <tbody id="diagnostic-list" class="divide-y"></tbody>
+    </table>
+  </div>
+</body>
+</html>

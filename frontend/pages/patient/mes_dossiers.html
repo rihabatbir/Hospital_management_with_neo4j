@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Historique Médical</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../js/mes_dossiers.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <h1 class="text-3xl font-bold text-center text-blue-800 mb-6">📋 Mon Historique Médical</h1>
+  <div class="max-w-6xl mx-auto container">
+    <table class="w-full bg-white rounded shadow">
+      <thead class="bg-blue-600 text-white">
+        <tr>
+          <th class="p-2">Date</th>
+          <th class="p-2">Heure</th>
+          <th class="p-2">Médecin</th>
+          <th class="p-2">Spécialité</th>
+          <th class="p-2">Service</th>
+          <th class="p-2">Diagnostic</th>
+          <th class="p-2">Traitement</th>
+        </tr>
+      </thead>
+      <tbody id="historiqueBody"></tbody>
+    </table>
+    <div id="error-message" class="hidden mt-4 text-red-700 bg-red-100 p-2 rounded text-center font-semibold"></div>
+  </div>
+</body>
+</html>

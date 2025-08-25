@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Hospitalier</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white min-h-screen font-sans">
+  <header class="bg-white shadow p-6 flex items-center justify-between">
+    <h1 class="text-3xl font-bold text-blue-900 flex items-center gap-2">
+      🏥 Système de Gestion Hospitalière
+    </h1>
+    <span class="text-sm text-gray-500">Version 1.0</span>
+  </header>
+
+  <main class="p-8">
+    <div class="bg-white rounded-lg shadow-md p-6 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold text-blue-800 mb-6 text-center">Bienvenue dans le tableau de bord médical</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="home.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded shadow flex items-center gap-4">
+          🏠 <span class="text-lg font-medium">Accueil</span>
+        </a>
+        <a href="patientDetails.html" class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 rounded shadow flex items-center gap-4">
+          🧑‍🦽 <span class="text-lg font-medium">Patients</span>
+        </a>
+        <a href="medecinDetails.html" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-4 rounded shadow flex items-center gap-4">
+          🧑‍⚕️ <span class="text-lg font-medium">Médecins</span>
+        </a>
+        <a href="traitements.html" class="bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded shadow flex items-center gap-4">
+          💊 <span class="text-lg font-medium">Traitements</span>
+        </a>
+        <a href="diagnostic.html" class="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded shadow flex items-center gap-4">
+          🔬 <span class="text-lg font-medium">Diagnostics</span>
+        </a>
+        <a href="rendezvous.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-4 rounded shadow flex items-center gap-4">
+          📅 <span class="text-lg font-medium">Rendez-vous</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 text-sm text-gray-400">
+    &copy; 2025 Hôpital Universitaire | Tous droits réservés
+  </footer>
+</body>
+</html>

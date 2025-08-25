@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tableau de bord - Staff</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <script>
+fetch("http://localhost:3000/auth/session", {
+  credentials: "include"
+})
+.then(res => res.json())
+.then(data => {
+  console.log("🧠 Utilisateur connecté :", data);
+  const page = window.location.pathname;
+
+  if (page.includes("staff") && data.role !== "staff") {
+    window.location.href = "../login.html";
+  } else if (page.includes("patient") && data.role !== "patient") {
+    window.location.href = "../login.html";
+  } else if (!data.role) {
+    window.location.href = "../login.html";
+  }
+})
+.catch(() => {
+  window.location.href = "../login.html";
+});
+</script>
+
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-blue-800 mb-4">👨‍⚕️ Tableau de bord du Personnel Hospitalier</h1>
+    <div class="grid grid-cols-2 gap-4">
+      <a href="./medecinDetails.html" class="bg-white p-4 rounded shadow hover:bg-blue-50">
+        🧑‍⚕️ Gérer les Médecins
+      </a>
+      <a href="./patientDetails.html" class="bg-white p-4 rounded shadow hover:bg-blue-50">
+        🧍‍♂️ Gérer les Patients
+      </a>
+      <a href="traitements.html" class="bg-white p-4 rounded shadow hover:bg-blue-50">
+        💊 Gérer les Traitements
+      </a>
+      <a href="rendezvous.html" class="bg-white p-4 rounded shadow hover:bg-blue-50">
+        📅 Gérer les Rendez-vous
+      </a>
+      <a href="visualisation.html" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+        📊 Voir Graphe Patient/Médecin
+      </a>
+      <a href="filtre_medecin.html" class="bg-white p-4 rounded shadow hover:bg-blue-50">
+  🔍 Filtrer par Médecin
+</a>
+
+    </div>
+  </div>
+</body>
+</html>

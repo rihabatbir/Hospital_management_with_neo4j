@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rendez-vous</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../../js/rendezvous.js"></script>
+
+</head>
+<body class="bg-gray-50 p-6">
+  <h1 class="text-3xl font-bold mb-4">📅 Rendez-vous</h1>
+  <table class="min-w-full bg-white rounded shadow">
+    <thead class="bg-indigo-600 text-white">
+      <tr>
+        <th class="p-2 text-left">ID</th>
+        <th class="p-2 text-left">Date</th>
+        <th class="p-2 text-left">Heure</th>
+        <th class="p-2 text-left">Patient</th>
+        <th class="p-2 text-left">Médecin</th>
+      </tr>
+    </thead>
+    <tbody id="rendezvous-list" class="divide-y"></tbody>
+  </table>
+  <h2 class="text-xl font-semibold mt-8 mb-2">➕ Ajouter un rendez-vous</h2>
+<form id="form-rendezvous" class="bg-white p-4 rounded shadow space-y-4 max-w-xl">
+  <div>
+    <label for="rdv-id" class="block text-sm font-medium">ID du rendez-vous</label>
+    <input type="text" id="rdv-id" required class="w-full border px-3 py-2 rounded" />
+  </div>
+  <div>
+    <label for="rdv-date" class="block text-sm font-medium">Date</label>
+    <input type="date" id="rdv-date" required class="w-full border px-3 py-2 rounded" />
+  </div>
+  <div>
+    <label for="rdv-heure" class="block text-sm font-medium">Heure</label>
+    <input type="time" id="rdv-heure" required class="w-full border px-3 py-2 rounded" />
+  </div>
+  <div>
+    <label for="rdv-patient" class="block text-sm font-medium">ID du patient</label>
+    <input type="text" id="rdv-patient" required class="w-full border px-3 py-2 rounded" />
+  </div>
+  <div>
+    <label for="rdv-medecin" class="block text-sm font-medium">ID du médecin</label>
+    <input type="text" id="rdv-medecin" required class="w-full border px-3 py-2 rounded" />
+  </div>
+  <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Ajouter</button>
+</form>
+
+</body>
+</html>
